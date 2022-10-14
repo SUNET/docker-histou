@@ -36,4 +36,4 @@ LATEST_TAG="${BASE_TAG}:latest"
 echo "${script_name}: building DOCKER_TAG ${DOCKER_TAG} ${LATEST_TAG}"
 
 docker build --tag "${DOCKER_TAG}" --tag "${LATEST_TAG}" .
-docker push --all-tags
+docker push --all-tags ${BASE_TAG}
